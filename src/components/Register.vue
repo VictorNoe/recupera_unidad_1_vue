@@ -89,6 +89,10 @@ export default {
                 return;
             }
 
+            if(!this.nombre || !this.edad || !this.cuatrimestre || !this.carrera){
+                return;
+            }
+
             let id = this.data.length + 1
             const student = {
                 "Nombre": this.nombre,
